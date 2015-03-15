@@ -13,8 +13,5 @@ Template.postSubmit.events({
             if (result.postExists) alert('This link has already been posted');
             Router.go('postPage', {_id: result._id});
         });
-
-        post._id = Posts.insert(post);
-        Router.go('postPage', post);
     }
 });
